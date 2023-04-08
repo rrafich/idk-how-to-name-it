@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Главная */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.head {
+    background-color: #8c0000;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.account {
+    font-size: 36px;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+.container-head {
+    display: flex;
+    flex-direction: row;
+}
+
+.news_head{
+    font-size: 56px;
+    color: white;
+    font-stretch: expanded;
+    display: flex;
+    margin-left: 2em;
+}
+
+.head-else {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-item {
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 36px;
+    display: flex;
+}
+
+.block{
+    margin-bottom: 4em;
+}
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 78px;
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+.main-container {
+    margin-bottom: 1.5%;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(233, 233, 233);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pic {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    width: 550px;
+    border-radius: 10px;
+    margin-left: 2em;
+}
+
+.text {
+    color: rgb(49, 49, 49);
+    font-size: 50px;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.header-text {
+    color: black;
+    font-size: 60px;
+    font-stretch: expanded;
+}
+.news{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.else {
+    font-size: 50px;
+    font-stretch: condensed;
+}
+
+/* Форма */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+    width: 100%;
+    padding: 8% 0 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.form {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 350px;
+    min-height: 375px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    height: 75px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #8c0000;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #700000;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        font-size: 39px;
+    }
+    .news_head {
+        font-size: 28px;
+    }
+    .text, .else {
+        font-size: 25px;
+    }
+    .head-item, .account {
+        font-size: 18px;        
+    }
+    .header-text {
+        font-size: 30px;
+    }
+    .pic {
+        max-width: 275px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .main-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .news {
+        margin: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        font-size: 19px;
+    }
+    .news_head {
+        font-size: 14px;
+    }
+    .text, .else {
+        font-size: 12px;
+    }
+    .head-item, .account {
+        font-size: 9px;        
+    }
+    .header-text {
+        font-size: 15px;
+    }
+    .pic {
+        max-width: 137px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .main-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .news {
+        margin: auto
+    }
+}
